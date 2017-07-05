@@ -9,6 +9,23 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
+ <input type="text" onfocus="alert('in Focus')" onchange="alert('text updated')">
+ <input type="text" onchange="logthis(this)" value="this from input text">
+ <button onclick="alert('hello world')">Clickme</button>
+ <button onclick="prompt('4+4')">Show promp</button>
+ <!--<div onmousemove="alert('mouse over this area')"> Mouse over this area</div>-->
+
+ <script>
+   function logthis(a) {
+     console.log(a.value);
+   }
+
+   logInFuction = function() {
+     console.log("Hello from loginFunction");
+   }
+
+ </script>
   <app-root></app-root>
 </body>
 </html>
